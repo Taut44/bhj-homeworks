@@ -25,14 +25,14 @@ function check(input) {
 	}
 }
 
-buttonAdd.addEventListener("click", () => {
-	event.preventDefault();
+buttonAdd.addEventListener("click", (e) => {
+	e.preventDefault();
 	check(input);
 })
 
 input.addEventListener("keydown", (e) => {
 	if (e.key === "Enter") {
-		event.preventDefault();
+		e.preventDefault();
 		check(input);
 	}
 })
